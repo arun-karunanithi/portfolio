@@ -10,7 +10,8 @@
               </ul>
           </div>
           <div class="home-picture col-md-6 col-xs-12 order-1 order-md-2" ref="homePicture" :style="dynamicHeroImageHeight">
-              <img class="bg-space" src="https://i.imgur.com/Xs2tZJQ.gif"/>
+              <!-- <img class="bg-space" src="https://i.imgur.com/Xs2tZJQ.gif"/> -->
+              <video class="bg-space" id="bg-space" autoplay loop muted><source src="https://i.imgur.com/4KZw0f7.mp4" type="video/webm"></video>
               <img class="fg-my-picture" src="https://i.imgur.com/yXutlbI.png"/>
           </div>
       </div>
@@ -28,7 +29,18 @@ export default{
               return null
           }
       }
-  }
+    },
+    // methods:{
+    //     loadBody(){
+    //         document.getElementById("bg-space").addEventListener("load", () => {
+    //         console.log('Test')
+    //             // document.body.style.visibility = 'visible';
+    //         })
+    //     }
+    // },
+    // created(){
+    //     this.loadBody();
+    // }
 }
 </script>
 
