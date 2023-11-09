@@ -1,0 +1,14 @@
+- Skip creat ad
+- Add screens for other objectives
+- Upload & Template in offers switch style
+- Include targeting
+- Create a review page to include all details even campaign & Add name
+- Packages is going to define date range & budget in most cases
+- Use the same interaction as offers page while selecting a package to show more details
+- Add page to give campaign attributes
+- Remove star and active all filter in BP Listing screen
+
+
+- Rejection screen for Agency
+- No update option. Review will show the same page with disabled fields
+- 
