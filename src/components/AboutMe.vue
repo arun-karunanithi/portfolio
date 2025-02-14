@@ -2,7 +2,7 @@
     <div class="container-fluid about-me-container-fluid">
         <div class="container" :class="isSizeDesktop ? 'about-me-container-desktop' : 'about-me-container-mobile'">
             <h3 :class="isSizeDesktop ? 'title-desktop' : 'title-mobile'">About Me</h3>
-            <p  :class="isSizeDesktop ? 'description-desktop' : 'description-mobile'">I'm a designer who always looks at problems with a practical lens 🔍 and puts a lot of emphasis on business goal 🎯 & trade offs ↔️ needs to be made in order to achieve them. Responsibilities I've held 👇</p>
+            <p  :class="isSizeDesktop ? 'description-desktop' : 'description-mobile'">I'm a Product Manager who approaches problems with a practical lens 🔍, balancing business goals 🎯 with necessary trade-offs ↔️ to drive impact. My experience spans designing and building products end-to-end, ensuring they are both user-friendly and business-driven. Responsibilities I've held 👇</p>
             <div class="row justify-content-center align-items-center" :class="isSizeDesktop ? 'about-content-desktop' : 'about-content-mobile'">
                 <div class="col-md-4 col-xs-12 about-me-pointer">
                     <img src="https://i.imgur.com/dZ7zQ9C.png">
@@ -10,11 +10,11 @@
                 </div>
                 <div class="col-md-4 col-xs-12 about-me-pointer">
                     <img src="https://i.imgur.com/cgl1py3.png">
-                    <p>Owning complete product <br>design cycle</p>
+                    <p>Owning the complete <br>product lifecycle</p>
                 </div>
                 <div class="col-md-4 col-xs-12 about-me-pointer">
-                    <img src="https://i.imgur.com/RyS6qHM.png">
-                    <p>Product Management <br>too!</p>
+                    <img src="https://i.imgur.com/Nh15kqM.png">
+                    <p>Stakeholder <br>Management</p>
                 </div>
             </div>
         </div>

@@ -4,8 +4,8 @@
           <div class="col-md-6 col-xs-12 order-2 order-md-1" :class="isSizeDesktop ? 'home-text-desktop' : 'home-text-mobile'">
               <h3>Arun Karunanithi</h3>
               <ul>
-                  <li>Product Designer</li>
-                  <li>3+ Years of Experience</li>
+                  <li>Product Manager</li>
+                  <li>4+ Years of Experience</li>
                   <li>Working at DeltaX</li>
               </ul>
           </div>

@@ -16,7 +16,7 @@
     </nav>
     <home-section :isSizeDesktop="isSizeDesktop" :mobileScreenSize="mobileScreenSize"></home-section>
     <about-me :isSizeDesktop="isSizeDesktop" :mobileScreenSize="mobileScreenSize" id="about"></about-me>
-    <my-works :isSizeDesktop="isSizeDesktop" :mobileScreenSize="mobileScreenSize" id="work"></my-works>
+    <work-updated :isSizeDesktop="isSizeDesktop" :mobileScreenSize="mobileScreenSize" id="work"></work-updated>
     <my-skills :isSizeDesktop="isSizeDesktop" :mobileScreenSize="mobileScreenSize" id="skills"></my-skills>
     <contact-section :isSizeDesktop="isSizeDesktop" :mobileScreenSize="mobileScreenSize" id="contact"></contact-section>
 </template>
@@ -24,14 +24,14 @@
 <script>
 import HomeSection from '../components/HomeSection.vue'
 import AboutMe from '../components/AboutMe.vue'
-import MyWorks from '../components/MyWorks.vue'
 import MySkills from '../components/MySkills.vue'
 import ContactSection from '../components/ContactSection.vue'
+import WorkUpdated from '../components/WorkUpdated.vue'
 
 
 export default{
     components:{
-        HomeSection, AboutMe, MyWorks, MySkills, ContactSection
+        HomeSection, AboutMe, WorkUpdated, MySkills, ContactSection
     },
     props:['isSizeDesktop','mobileScreenSize'],
     methods:{

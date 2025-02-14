@@ -2,12 +2,12 @@
     <div class="container-fluid">
         <div :class="isSizeDesktop ? 'container-for-css-desktop' : 'container-for-css-mobile'">
             <div class="container image-container">
-                <img src="https://i.imgur.com/IAi8PoU.png" class="among-us-image" v-if="isSizeDesktop">
-                <img src="https://i.imgur.com/tCS5wVk.png" class="among-us-image" v-else>
+                <img src="https://i.imgur.com/q8QhZvI.png" class="among-us-image" v-if="isSizeDesktop">
+                <img src="https://i.imgur.com/HJK2ciY.png" class="among-us-image" v-else>
             </div>
         </div>
         <div class="container">
-            <div class="techmologies-container row">
+            <div class="technologies-container row">
                 <h3 :class="isSizeDesktop ? 'title-desktop' : 'title-mobile'">Other Technologies</h3>
                 <div class="col-md-3 col-4" :class="isSizeDesktop ? 'parent-card-desktop' : 'parent-card-mobile'">
                     <div :class="isSizeDesktop ? 'tool-card-desktop' : 'tool-card-mobile'">
@@ -30,7 +30,7 @@
                 <div class="col-md-3 col-4" :class="isSizeDesktop ? 'parent-card-desktop' : 'parent-card-mobile'">
                     <div :class="isSizeDesktop ? 'tool-card-desktop' : 'tool-card-mobile'">
                         <img src="https://i.imgur.com/tDOV3M6.png">
-                        <p>VueJS</p>
+                        <p>VueJS - Frontend dev framework</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-4" :class="isSizeDesktop ? 'parent-card-desktop' : 'parent-card-mobile'">
@@ -95,7 +95,7 @@ export default{
     background-color: #101010;
     max-width: 1000px;
 }
-.techmologies-container{
+.technologies-container{
     display: flex;
     justify-content: center;
     background-color: black;

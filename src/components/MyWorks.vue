@@ -1,7 +1,25 @@
-<template>
+<template> 
+    <!-- Not using this component. Decided not relavant while updating from designer to PM portfolio -->
     <div class="container-fluid">
         <div class="container" :class="isSizeDesktop ? 'my-works-container-desktop' : 'my-works-container-mobile'">
             <h3 :class="isSizeDesktop ? 'title-desktop' : 'title-mobile'">My Works</h3>
+
+            <project-desktop 
+            v-if="isSizeDesktop"
+            class="project-entry"
+            projectLogo="https://i.imgur.com/7FZjoa0.png"
+            projectTitle="JioCinema Ads"
+            projectDescription="An end-to-end platform to run ad campaigns on JioCinema steaming app where businesses and agencies can create, manage ad campaigns, review the campaign peformance using reports and dashboard, manage leads, add and manage funds"
+            myRole="Product Management & Design"
+            duration="1.5 years of continuous iteration & testing"
+            tools="Adobe XD, After Effects, Zeplin"
+            :isProtected=true
+            :destination=null
+            :isProductLink=true
+            productLink="https://ads.jiocinema.com/"
+            productLinkText="Visit Product"            
+            ></project-desktop>
+
             <project-desktop 
             v-if="isSizeDesktop"
             class="project-entry"
@@ -17,6 +35,7 @@
             productLink="https://bizgain.com/"
             productLinkText="Visit Product"            
             ></project-desktop>
+            
             <project-desktop 
             v-if="isSizeDesktop"
             class="project-entry"
@@ -32,6 +51,7 @@
             :productLink=null
             :productLinkText=null           
             ></project-desktop>
+            
             <project-desktop 
             v-if="isSizeDesktop"
             class="project-entry"
@@ -47,6 +67,7 @@
             productLink="https://play.google.com/store/apps/details?id=com.deltax.brandx.app&pli=1"
             productLinkText="Visit Playstore"           
             ></project-desktop>
+            
             <project-desktop 
             v-if="isSizeDesktop"
             class="project-entry"
@@ -62,6 +83,7 @@
             :productLink=null
             :productLinkText=null           
             ></project-desktop>
+            
             <project-mobile 
             v-if="!isSizeDesktop"
             class="project-entry"
@@ -75,6 +97,7 @@
             productLink="https://bizgain.com/"
             productLinkText="Visit Product"            
             ></project-mobile>
+            
             <project-mobile 
             v-if="!isSizeDesktop"
             class="project-entry"
@@ -88,6 +111,7 @@
             :productLink=null
             :productLinkText=null           
             ></project-mobile>
+            
             <project-mobile 
             v-if="!isSizeDesktop"
             class="project-entry"
@@ -101,6 +125,7 @@
             productLink="https://play.google.com/store/apps/details?id=com.deltax.brandx.app&pli=1"
             productLinkText="Visit Playstore"           
             ></project-mobile>
+            
             <project-mobile 
             v-if="!isSizeDesktop"
             class="project-entry"
