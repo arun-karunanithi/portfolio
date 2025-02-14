@@ -1,3 +1,0 @@
-- Not very strong with UI patterns
-- Not able to think of scheduled report feature
-- Not good in user flow

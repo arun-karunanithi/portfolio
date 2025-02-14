@@ -1,4 +1,0 @@
-- Was able to simplify status part. But not able to come to a simplified solution
-- Was not able to put a system in place for booking testing
-- Not able to come up with schedule report
-- Some solutions were good
