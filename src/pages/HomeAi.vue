@@ -18,20 +18,32 @@
     <about-me :isSizeDesktop="isSizeDesktop" :mobileScreenSize="mobileScreenSize" id="about"></about-me>
     <work-updated :isSizeDesktop="isSizeDesktop" :mobileScreenSize="mobileScreenSize" id="work"></work-updated>
     <my-skills :isSizeDesktop="isSizeDesktop" :mobileScreenSize="mobileScreenSize" id="skills"></my-skills>
-    <contact-section :isSizeDesktop="isSizeDesktop" :mobileScreenSize="mobileScreenSize" id="contact"></contact-section>
+    <contact-ai :isSizeDesktop="isSizeDesktop" :mobileScreenSize="mobileScreenSize" id="contact"></contact-ai>
 </template>
 
 <script>
 import HomeSection from '../components/HomeSection.vue'
 import AboutMe from '../components/AboutMe.vue'
 import MySkills from '../components/MySkills.vue'
-import ContactSection from '../components/ContactSection.vue'
+import ContactAi from '../components/ContactAi.vue'
 import WorkUpdated from '../components/WorkUpdated.vue'
 
 
 export default{
+    name: 'ChatbotEmbed',
+  mounted() {
+    // Dynamically load the Flowise script
+    const script = document.createElement('script')
+    script.type = 'module'
+    script.textContent =`import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js";
+      Chatbot.init({
+        chatflowid: "1130a8a9-49ea-4889-a940-651e65fa9b17",
+        apiHost: "https://jobmatchchatbot.onrender.com",
+      });`
+    document.body.appendChild(script)
+  },
     components:{
-        HomeSection, AboutMe, WorkUpdated, MySkills, ContactSection
+        HomeSection, AboutMe, WorkUpdated, MySkills, ContactAi
     },
     props:['isSizeDesktop','mobileScreenSize'],
     methods:{

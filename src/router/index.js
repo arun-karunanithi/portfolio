@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../pages/HomePage.vue'
 import SecondOpinion from '../pages/SecondOpinion.vue'
+import HomeAi from '../pages/HomeAi.vue'
 
 const routes = [
   {
@@ -16,6 +17,11 @@ const routes = [
     path: '/case-study-second-opinion',
     name: 'Second Opinion Case Study',
     component: SecondOpinion
+  },
+  {
+    path: '/ai',
+    name: 'AI Test',
+    component: HomeAi
   }
 ]
 

@@ -32,7 +32,7 @@
                 <svg @click="openExternalLink('https://www.facebook.com/arun.karunanithi1997')" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_326_214)"><path d="M20.4844 0H3.51562C2.58356 0.00110408 1.68999 0.371854 1.03092 1.03092C0.371854 1.68999 0.00110408 2.58356 0 3.51562L0 20.4844C0.00110408 21.4164 0.371854 22.31 1.03092 22.9691C1.68999 23.6281 2.58356 23.9989 3.51562 24H10.5938V15.5156H7.78125V11.2969H10.5938V8.4375C10.595 7.319 11.0399 6.24666 11.8308 5.45576C12.6217 4.66486 13.694 4.21999 14.8125 4.21875H19.0781V8.4375H14.8125V11.2969H19.0781L18.375 15.5156H14.8125V24H20.4844C21.4164 23.9989 22.31 23.6281 22.9691 22.9691C23.6281 22.31 23.9989 21.4164 24 20.4844V3.51562C23.9989 2.58356 23.6281 1.68999 22.9691 1.03092C22.31 0.371854 21.4164 0.00110408 20.4844 0Z" fill="white"/></g><defs><clipPath id="clip0_326_214"><rect width="24" height="24" fill="white"/></clipPath></defs></svg>
             </div>
             <!--Below added button is created to get response from local AI-->
-            <!--<button type="submit" :class="isSizeDesktop ? 'button-desktop' : 'button-mobile'" @click="fetchQuery">Test AI</button>-->
+            <button type="submit" :class="isSizeDesktop ? 'button-desktop' : 'button-mobile'" @click="fetchQuery">Test AI</button>
         </div>
     </div>
 </template>
@@ -106,8 +106,6 @@ export default{
         },
         
         //Below 2 functions are created to get response from local AI
-
-        /**
         async query(data) {
       try {
         const response = await fetch(
@@ -132,7 +130,7 @@ export default{
       const data = { question: "https://amagi.com" };
       const response = await this.query(data);
       console.log("Response from API:", response);
-    }**/
+    }
     }
 }
 </script>
