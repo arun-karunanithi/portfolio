@@ -30,6 +30,18 @@ import WorkUpdated from '../components/WorkUpdated.vue'
 
 
 export default{
+    name: 'ChatbotEmbed',
+  mounted() {
+    // Dynamically load the Flowise script
+    const script = document.createElement('script')
+    script.type = 'module'
+    script.textContent =`import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js";
+      Chatbot.init({
+        chatflowid: "1130a8a9-49ea-4889-a940-651e65fa9b17",
+        apiHost: "https://jobmatchchatbot.onrender.com",
+      });`
+    document.body.appendChild(script)
+  },
     components:{
         HomeSection, AboutMe, WorkUpdated, MySkills, ContactSection
     },
